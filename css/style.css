@@ -130,7 +130,7 @@ body {
     border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
     width: 100%;
-    content: url(/product-preview-card-component-main/images/image-product-desktop.jpg);
+    content: url(../images/image-product-desktop.jpg);
   }
 
 
