@@ -1,0 +1,155 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution {
+    display: none;
+}
+
+/*Main Container*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 337.5px;
+    height: 95%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/*Image Product*/
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-product {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*Content*/
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.8%;
+    line-height: 1.5em;
+}
+
+/*Texts*/
+
+.product {
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.product-name {
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    margin: 0;
+    line-height: 1em;
+}
+
+.about-product {
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.price-product {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+}
+
+.old-price-product {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-left: 10px;
+    font-family: "Montserrat";
+}
+
+/*Button*/
+
+.shopping-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+.add-to-cart {
+    font-size: 14px;
+    font-family: "Montserrat";
+    padding-left: 10px;
+}
+
+/*Media Query*/
+
+@media screen and (min-width: 624px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 620px;
+    height: 470.88px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-product  {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    content: url(/product-preview-card-component-main/images/image-product-desktop.jpg);
+  }
+
+
+  .content {
+    padding:  0 40px;
+    height: 470.88px;;
+    justify-content: space-evenly;
+  }
+
+  .shopping-cart:active {
+    background-color: hsl(212, 21%, 14%);
+  }
+
+  .shopping-cart:hover {
+    cursor: pointer;
+  }
+
+}
+
+
+
+
